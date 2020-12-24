@@ -1,0 +1,11 @@
+#page-top li {
+display: inline;
+float: right;
+padding: 5px;
+font-size: 14px;
+font-weight: bold;
+padding: 5px 10px;
+}
+#page-top li a {
+color: #fff;
+}

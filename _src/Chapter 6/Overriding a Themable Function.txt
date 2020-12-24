@@ -1,0 +1,25 @@
+function tao_breadcrumb($breadcrumb) {
+$show_breadcrumb = theme_get_setting('zen_breadcrumb');$show_
+breadcrumb_home = theme_get_setting('zen_breadcrumb_home');
+$breadcrumb_separator = theme_get_setting('zen_breadcrumb_
+separator');
+$trailing_separator = (theme_get_setting('zen_breadcrumb_trailing')
+|| theme_get_setting('zen_breadcrumb_title')) ? $breadcrumb_separator
+: '';
+// Determine if we are to display the breadcrumb
+if ($show_breadcrumb == 'yes' || $show_breadcrumb == 'admin' &&
+arg(0) == 'admin') {
+if (!$show_breadcrumb_home) {
+// Optionally get rid of the homepage link
+array_shift($breadcrumb);
+}
+if (!empty($breadcrumb)) {
+// Return the breadcrumb with separators
+return '<div class="breadcrumb"><strong>You are here: </strong>' .
+implode($breadcrumb_separator, $breadcrumb) . "$trailing_separator</
+div>";
+}
+}
+// Otherwise, return an empty string
+return '';
+}

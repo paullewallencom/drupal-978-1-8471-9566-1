@@ -1,0 +1,12 @@
+#sidebar-right ul.menu {
+border-top: 1px solid #676734;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 1px solid #676734;
+background-color: #eaebcd;
+color: #676734;
+font-weight: bold;
+font-family: verdana;
+font-size: 14px;
+line-height: 22px;
+}

@@ -1,0 +1,6 @@
+#search-box {
+position: absolute;
+padding: 0;
+top: 20px;
+right: 20px;
+}

@@ -1,0 +1,9 @@
+regions[page_top] = page top
+regions[banner] = banner
+regions[right] = right sidebar
+regions[navbar] = navigation bar
+regions[content_top] = content top
+regions[content_bottom] = content bottom
+regions[header] = header
+regions[footer] = footer
+regions[closure_region] = closure

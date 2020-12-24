@@ -1,0 +1,5 @@
+<?php if ($submitted): ?>
+<div class="submitted">
+<?php print t('Posted ') ?><strong><?php print $date ?></strong>
+</div>
+<?php endif; ?>
